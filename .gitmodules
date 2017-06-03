@@ -1,0 +1,6 @@
+[submodule "node-clicker-api"]
+	path = node-clicker-api
+	url = git@github.com:piti118/node-clicker-api.git
+[submodule "clicker-react"]
+	path = clicker-react
+	url = git@github.com:piti118/clicker-react.git

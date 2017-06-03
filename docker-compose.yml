@@ -1,0 +1,11 @@
+version: '2'#make sure you build first
+services:
+  web:
+    build: .
+    expose:
+      - "3000"
+    environment:
+      - VIRTUAL_HOST=clicker.piti.me
+      - LETSENCRYPT_HOST=clicker.piti.me
+      - LETSENCRYPT_EMAIL=piti118@gmail.com
+    network_mode: "bridge"

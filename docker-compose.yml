@@ -6,7 +6,7 @@ services:
       - "3000"
     restart: unless-stopped
     environment:
-      - VIRTUAL_HOST=clicker.piti.me
-      - LETSENCRYPT_HOST=clicker.piti.me
+      - VIRTUAL_HOST=clicker.piti.me,www.clickery.org,clickery.org
+      - LETSENCRYPT_HOST=clicker.piti.me,www.clickery.org,clickery.org
       - LETSENCRYPT_EMAIL=piti118@gmail.com
     network_mode: "bridge"

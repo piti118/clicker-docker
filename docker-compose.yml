@@ -3,7 +3,7 @@ services:
   web:
     build: .
     expose:
-      - "3000"
+      - "5555"
     restart: unless-stopped
     environment:
       - VIRTUAL_HOST=clicker.piti.me,www.clickery.org,clickery.org

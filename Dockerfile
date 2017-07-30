@@ -3,8 +3,8 @@ FROM node:7
 COPY ./clicker-react/package.json /clicker-react/
 RUN cd /clicker-react && npm install
 
-COPY ./clickery-socket/package.json /node-clicker-api/
-RUN cd /node-clicker-api && npm install
+COPY ./clickery-socket/package.json /clickery-socket/
+RUN cd /clickery-socket && npm install
 
 COPY ./clickery-socket /clickery-socket
 COPY ./clicker-react /clicker-react

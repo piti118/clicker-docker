@@ -13,7 +13,7 @@ RUN mkdir /clickery-socket/public
 RUN cd /clicker-react && npm run build-deploy
 
 WORKDIR /clickery-socket
-
+RUN npm run build
 EXPOSE 5555
 ENV NODE_ENV production
-CMD npm run start
+CMD npm run prod
